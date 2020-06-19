@@ -6,6 +6,9 @@ screenw, screenh = (1000, 650)
 win = pg.display.set_mode((screenw, screenh))
 
 frameRate = 60
+connectors = False
+
+
 line = screenw / 2
 marks = []
 
@@ -49,15 +52,21 @@ class Circle:
         # render pt
         pg.draw.circle(win, (255, 255, 255), [self.point[0] + self.center[0], self.point[1] + self.center[1]], 4)
 
+        # render connector
+        if connectors:
+            pg.draw.line(win, (255, 255, 255), self.center, [self.center[0] + self.point[0], self.center[1] + self.point[1]])
+
     def Mark(self):
         pg.draw.line(win, (255, 255, 255), [self.center[0] + self.point[0], self.center[1] + self.point[1]], [line, self.center[1] + self.point[1]])
         marks.append([line, self.center[1] + self.point[1]])
 
 
-c1 = Circle(0.5, 100)
-c2 = Circle(1, 50, c1)
+c1 = Circle(0.125, 100)
+c2 = Circle(0.25, 50, c1)
+c3 = Circle(0.5, 25, c2)
+c4 = Circle(1, 30, c3)
 
-circles = [c1, c2]
+circles = [c1, c2, c3, c4]
 
 clock = pg.time.Clock()
 update = True
