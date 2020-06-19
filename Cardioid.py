@@ -43,7 +43,7 @@ def Repeat():
         pg.display.update()
         time.sleep(0.1)
 
-
+# make a thread for the function to repeat and main thread is for event listening
 newThread = threading.Thread(target=Repeat)
 newThread.start()
 while update:

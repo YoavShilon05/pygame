@@ -5,8 +5,9 @@ screenw = 1920
 screenh = 1080
 screen = pg.display.set_mode((screenw, screenh))
 
-scale = 450
-sharpness = 150
+# can change these vars:
+zoom = 450
+sharpness = 25
 power = 2
 
 def distance(a, b):
@@ -18,7 +19,7 @@ def distance(a, b):
 for x in range(round(-screenw / 2), round(screenw / 2)):
     for y in range(round(-screenh / 2), round(screenh / 2)):
 
-        n = complex(x / scale, y / scale)
+        n = complex(x / zoom, y / zoom)
         c = n
         iterations = 0
         for i in range(sharpness):
