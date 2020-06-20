@@ -8,7 +8,7 @@ each point (p) is connected to point p * n where n is the number of the table in
 this equation lands some pretty cool shapes!
 
 ### Dragon
-A formula to generate [The Dragon curve](https://en.wikipedia.org/wiki/Dragon_curve) a famous fractal.
+A formula to generate [The Dragon Curve](https://en.wikipedia.org/wiki/Dragon_curve), a famous fractal.
 The formula used to generate it is [this](https://en.wikipedia.org/wiki/Dragon_curve#Construction)
 
 ### Fourier
@@ -21,7 +21,7 @@ Classic Snake! eat the apples to grow your tail.
 
 ### Mandelbrot
 
-A visualization of the [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set).
+A visualization of the [Mandelbrot Set](https://en.wikipedia.org/wiki/Mandelbrot_set).
 
 ### sierpinski triangle
 
