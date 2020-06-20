@@ -1,14 +1,14 @@
 import pygame as pg
 from math import *
 
-screenw = 1920
-screenh = 1080
-screen = pg.display.set_mode((screenw, screenh))
+screenw, screenh = (1920, 1080)
 
-# can change these vars:
+### VARS TO TWEAK
 zoom = 450
 sharpness = 25
 power = 2
+
+screen = pg.display.set_mode((screenw, screenh))
 
 def distance(a, b):
     return sqrt((b[0] - a[0])**2 + (b[1] - a[1])**2)

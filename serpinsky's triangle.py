@@ -1,26 +1,26 @@
 import pygame
 import random
 
-pygame.init()
-
-screen = pygame.display.set_mode((1156, 1000))
-
-Update = True
-
-
+# VARIABLES TO TWEAK
+screenw, screenh = (1156, 1000)
 A = [578, 0]
 B = [1155, 999]
 C = [1, 999]
+
+
+screen = pygame.display.set_mode((screenw, screenh))
+
 points = [A, B, C]
 
 pygame.draw.rect(screen, (255, 255, 255), (578, 0, 1, 1)) #A
 pygame.draw.rect(screen, (255, 255, 255), (1155, 999, 1, 1)) #B
 pygame.draw.rect(screen, (255, 255, 255), (1, 999, 1, 1)) #C
+CurrentPoint = A
 pygame.display.update()
 
 
-CurrentPoint = A
 
+Update = True
 while Update is True:
 
 

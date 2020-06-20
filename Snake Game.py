@@ -4,16 +4,20 @@ import time
 from typing import List
 from queue import Queue
 
+# VARIABLES TO TWEAK
 screenw, screenh = (500, 500)
-win = pg.display.set_mode((screenw, screenh))
-
 blockSize = 50
 blockPadding = 5
+# farmerate (ms)
+framerate = 150
+
+
 snake : List[List[int]] = [[(screenw / blockSize) // 2, (screenh / blockSize) // 2]]
 direction = [0, 0]
-framerate = 150
 apple = None
 directionQ = Queue()
+
+win = pg.display.set_mode((screenw, screenh))
 
 update = True
 while update:
