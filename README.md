@@ -1,5 +1,6 @@
 # projects
 Graphics and maths in python, projects to visualize mathematical equations and small games.
+- - - Requires pygame library to show graphics.
 
 ### Cardioid
 A sequence of times tables - 
